@@ -113,3 +113,16 @@ Ready to try it yourself? Here’s your game plan:
 - Install some helper tools by typing this into your command line:
   ```bash
   pip install pandas numpy matplotlib seaborn xgboost sklearn fuzzywuzzy shap
+
+
+
+- Grab the Matches.csv and EloRatings.csv files and stick them in a folder with your project.
+
+### Run the Code:
+- Open the Python script (it’s included with the project) and hit “run.” It’ll clean the data, make the features, and train XGBoost—all in one go.
+
+- Make Predictions:
+There’s a handy function called predict_match_winner. Just tell it the teams, like:
+  ```bash
+
+    predict_match_winner("Barcelona", "Real Madrid", model, df1, selected_features)
